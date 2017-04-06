@@ -10,7 +10,7 @@ fi
 
 if [[ $(virsh domstate $VM) != "shut off" ]]; then
    echo "Forcing $VM off."
-   virsh destory $VM
+   virsh destroy $VM
 fi
 
 virsh undefine $VM 
